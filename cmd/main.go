@@ -39,6 +39,7 @@ func mainRun() exitCode {
 
 	fmt.Printf("Copy code: %s\n", code.UserCode)
 	fmt.Printf("then open: %s\n", code.VerificationURI)
+	fmt.Printf("press enter after copying the code\n")
 
 	_ = waitForEnter(os.Stdin)
 
