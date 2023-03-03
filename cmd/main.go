@@ -29,7 +29,8 @@ func main() {
 func mainRun() exitCode {
 	clientID := "0dd9bfc230aae2a3aec6"
 	//clientID := "178c6fc778ccc68e1d6a"
-	scopes := []string{"repo", "read:org", "gist"}
+	scopes := []string{}
+	//scopes := []string{"repo", "read:org", "gist"}
 	httpClient := http.DefaultClient
 
 	code, err := device.RequestCode(httpClient, "https://github.com/login/device/code", clientID, scopes)
